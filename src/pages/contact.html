@@ -1,0 +1,60 @@
+---
+layout: ../_layouts/base.njk
+title: "Contact | Local Cafe"
+permalink: "/contact.html"
+extra_css:
+  - "/css/style.css"
+  - "/css/cafe.css"
+extra_js: []
+---
+
+<section class="hero-section">
+  <div class="hero-content">
+    <h1>Contact Us</h1>
+    <p>Get in touch with us for any inquiries or reservations.</p>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Contact Information</h2>
+        <p>Visit us or contact us using the details below.</p>
+        <ul>
+          <li><i class="fa-solid fa-location-dot"></i> 123 Main Street, Anytown</li>
+          <li><i class="fa-solid fa-phone"></i> (123) 456-7890</li>
+          <li><i class="fa-solid fa-envelope"></i> info@localcafe.com</li>
+        </ul>
+        <h2>Business Hours</h2>
+        <p>Monday - Friday: 7:00 AM - 7:00 PM</p>
+        <p>Saturday - Sunday: 8:00 AM - 5:00 PM</p>
+      </div>
+      <div class="col-md-6">
+        <h2>Send Us a Message</h2>
+        <form id="contactForm"
+              class="custom-contact-form"
+              data-form-handler
+              data-api=""
+              data-from="noreply@example.com"
+              data-success="Thank you! We will get back to you soon."
+              data-error="Oops! Something went wrong."
+              data-report-label="template-form">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

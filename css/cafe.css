@@ -1,0 +1,223 @@
+/* /css/cafe.css */
+
+:root {
+  --primary-color: #9E7FFF;
+  --secondary-color: #38bdf8;
+  --accent-color: #f472b6;
+  --background-color: #171717;
+  --surface-color: #262626;
+  --text-color: #FFFFFF;
+  --text-secondary-color: #A3A3A3;
+  --border-color: #2F2F2F;
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  --error-color: #ef4444;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: var(--text-color);
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  opacity: 0.8;
+}
+
+.btn-outline-light {
+  color: var(--text-color);
+  border-color: var(--text-color);
+}
+
+.btn-outline-light:hover {
+  background-color: var(--surface-color);
+  border-color: var(--text-color);
+}
+
+.features-section {
+  padding: 4rem 0;
+}
+
+.feature-card {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.feature-card i {
+  color: var(--accent-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-section {
+  padding: 4rem 0;
+}
+
+.about-section img {
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.testimonials-section {
+  padding: 4rem 0;
+  background-color: var(--surface-color);
+}
+
+.testimonial-card {
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-author i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.cta-section {
+  padding: 4rem 0;
+}
+
+.cta-card {
+  background-color: var(--surface-color);
+  padding: 3rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.cta-card h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Menu Page Styles */
+.menu-section {
+  padding: 4rem 0;
+}
+
+.menu-item {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.menu-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.menu-item p {
+  margin-bottom: 1rem;
+}
+
+.menu-item span {
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+/* Contact Page Styles */
+.contact-section {
+  padding: 4rem 0;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-section li {
+  margin-bottom: 0.5rem;
+}
+
+.contact-section i {
+  color: var(--accent-color);
+  margin-right: 0.5rem;
+}
+
+/* Team Section Styles */
+.team-section {
+  padding: 4rem 0;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Form Styles */
+.custom-contact-form .form-control {
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
+.custom-contact-form .form-control:focus {
+  background-color: var(--background-color);
+  border-color: var(--primary-color);
+  color: var(--text-color);
+  box-shadow: none;
+}
+
+/* Rounded Feature */
+.rounded .btn,
+.rounded .form-control,
+.rounded .feature-card,
+.rounded .testimonial-card,
+.rounded .cta-card,
+.rounded .menu-item,
+.rounded .team-member img {
+  border-radius: 1rem;
+}
